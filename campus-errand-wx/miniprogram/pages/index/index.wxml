@@ -1,0 +1,28 @@
+<view class="container">
+  <swiper autoplay="true" class="banner">
+    <swiper-item wx:for="{{ banner }}" wx:key="index" class="banner_item">
+      <image src="{{ item }}" mode="widthFix" class="banner_image"/>
+    </swiper-item>
+  </swiper>
+
+  <view class="func_box">
+    <view class="main_func">
+      <van-grid column-num="2" custom-class="func_grid">
+        <van-grid-item icon="photo-o" text="文字" />
+        <van-grid-item icon="photo-o" text="文字" />
+      </van-grid>
+    </view>
+    <view class="secondary_func">
+      <van-grid column-num="2" custom-class="func_grid">
+        <van-grid-item icon="photo-o" text="文字" />
+        <van-grid-item icon="photo-o" text="文字" />
+      </van-grid>
+      <van-grid column-num="2" custom-class="func_grid">
+        <van-grid-item icon="photo-o" text="文字" />
+        <van-grid-item icon="photo-o" text="文字" />
+      </van-grid>
+    </view>
+  </view>
+  
+  <van-button type="primary">按钮</van-button>
+</view>

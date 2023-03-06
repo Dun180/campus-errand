@@ -1,0 +1,30 @@
+/**user.wxss**/
+.container {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+
+.func_box {
+  margin-top: 20rpx;
+}
