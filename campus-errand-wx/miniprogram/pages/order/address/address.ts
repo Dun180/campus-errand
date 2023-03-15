@@ -1,23 +1,13 @@
-// pages/index/index.ts
+// pages/order/address/address.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    banner:[
-      '/static/image/banner/banner1.jpg',
-      '/static/image/banner/banner2.jpg',
-      '/static/image/banner/banner3.jpg'
-    ],
+
   },
-  // 事件处理函数
-  bindViewTap : (event: any) => {
-    const target = event.target.id
-    wx.navigateTo({
-      url: '../order/'+target+'/'+target,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

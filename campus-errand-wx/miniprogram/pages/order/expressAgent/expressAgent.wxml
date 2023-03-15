@@ -1,0 +1,49 @@
+<!--pages/order/expressAgent/expressAgent.wxml-->
+<view class="container">
+  <view class="content">
+    <van-cell-group custom-class="express_info">
+      <van-cell icon="point-gift-o">
+        <view slot="title">
+          <view class="van-cell-text">快递大小</view>
+          <view class="express_size">
+            <view 
+              class="{{size === index ? 'select_size' : ''}}"
+              wx:for="{{sizeList}}" 
+              wx:key="index" 
+              data-id="{{index}}" 
+              bindtap="selectSize">
+              {{item.name}}
+            </view>
+          </view>
+        </view>
+      </van-cell>
+      <van-cell title="取件信息" value="内容" icon="orders-o" />
+      <van-cell title="收件地址" value="请选择地址" icon="location-o" />
+      <van-cell title="快递商家" value="请选择快递点" icon="logistics" />
+      <van-cell title="备注信息" value="所有人可见" icon="description" />
+      <van-cell icon="ellipsis" title="更多要求">
+        <van-switch checked="{{ checked }}" bind:change="onChange" />
+      </van-cell>
+      <view wx:if="{{checked}}">
+        <van-cell title="期望送达" value="所有人可见" icon="description" />
+        <van-cell title="性别限制" value="所有人可见" icon="description" />
+        <van-cell title="快递数量" value="所有人可见" icon="description" />
+        <van-cell title="追加金额" value="所有人可见" icon="description" />
+      </view>
+    </van-cell-group>
+    <van-cell-group custom-class="express_info">
+      <van-cell title="超大件（10kg以上）请点击更多要求合理增加金额" icon="description" />
+      <van-cell title="信息仅接单的同学可见，安全放心" icon="description" />
+    </van-cell-group>
+
+    <van-submit-bar
+      label="需支付"
+      price="{{ 3050 }}"
+      button-text="提交订单"
+      bind:submit="onSubmit"
+    />
+  </view>
+
+
+  <van-toast id="van-toast" />
+</view>

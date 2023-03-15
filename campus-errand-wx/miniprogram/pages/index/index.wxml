@@ -14,7 +14,7 @@
     </view>
     <view class="secondary_func">
       <van-grid column-num="2" custom-class="func_grid">
-        <van-grid-item icon="photo-o" text="文字" />
+        <van-grid-item id="expressAgent" bindtap="bindViewTap" icon="photo-o" text="快递代取" />
         <van-grid-item icon="photo-o" text="文字" />
       </van-grid>
       <van-grid column-num="2" custom-class="func_grid">

@@ -1,0 +1,56 @@
+/* pages/order/orderHall/orderHall.wxss */
+.card_list {
+  padding: 10rpx 30rpx 0 30rpx;
+}
+.card {
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  display: flex;
+  .order_info {
+    margin-left: 20rpx;
+    flex: 1;
+    .info_top {
+      display: flex;
+      .top_label {
+        margin-left: auto;
+      }
+      .order_type {
+        font-weight: bold;
+      }
+      .order_time {
+        font-size: 26rpx;
+        color: rgba(77, 75, 75, 0.651);
+      }
+    }
+
+    .info_bottom  {
+      margin-top: 10rpx;
+      display: flex;
+      flex-direction: column;
+      .notes {
+        font-size: 28rpx;
+      }
+
+      .start_position {
+        font-size: 28rpx;
+        color: #6887E1;
+      }
+
+      .end_position {
+        font-size: 28rpx;
+        color: #31B572;
+      }
+
+      .bottom_label {
+        margin-left: auto;
+      }
+      view {
+        margin-top: 5rpx;
+      }
+    }
+  }
+
+
+}

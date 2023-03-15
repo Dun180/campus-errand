@@ -1,2 +1,10 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="订单大厅">
+    <order-hall></order-hall>
+  </van-tab>
+  <van-tab title="我发布的">内容 2</van-tab>
+  <van-tab title="我帮助的">内容 3</van-tab>
+</van-tabs>
+</view>

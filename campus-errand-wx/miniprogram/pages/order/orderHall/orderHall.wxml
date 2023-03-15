@@ -1,0 +1,55 @@
+<!--pages/order/orderHall/orderHall.wxml-->
+<view class="container">
+  <view class="card_list">
+    <view wx:for="{{array}}" wx:key="index" class="card">
+      <van-image
+        round
+        width="2rem"
+        height="2rem"
+        src="https://img.yzcdn.cn/vant/cat.jpeg"
+      />
+      <view class="order_info">
+        <view class="info_top">
+          
+          <view>
+            <view class="order_type">
+            快递代取
+            </view>
+            <view class="order_time">
+              3小时前
+            </view>
+          </view>
+          <van-tag 
+            round 
+            type="primary" 
+            color="#eff7ff" 
+            text-color="#42a1ff" 
+            size="medium" 
+            class="top_label"
+            >已帮助</van-tag>
+
+        </view>
+        <view class="info_bottom">
+          <view class="notes">
+          滋补老鸭面
+          </view>
+          <view class="start_position">
+            校门口
+          </view>
+          <view class="end_position">
+            北八宿舍楼
+          </view>
+
+          <van-tag 
+            round 
+            type="primary" 
+            color="#FFF3F3" 
+            text-color="#FF6666" 
+            size="medium" 
+            class="bottom_label"
+            >配送费2元</van-tag>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

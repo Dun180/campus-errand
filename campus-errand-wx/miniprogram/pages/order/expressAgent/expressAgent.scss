@@ -1,0 +1,41 @@
+/* pages/order/expressAgent/expressAgent.wxss */
+.content {
+  margin: 0 20rpx 20rpx 20rpx;
+}
+.express_info {
+  border-radius: 20rpx;
+  box-shadow: 0 0 15rpx #d6d6d6;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.release_module {
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  box-shadow: 0 0 15rpx #d6d6d6;
+}
+.express_size {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 40rpx 0 20rpx 0;
+  view {
+    border: 2rpx solid #d1d1d1;
+    padding: 15rpx 25rpx;
+    border-radius: 30rpx;
+    color: #949494;
+  }
+
+  .select_size {
+    color: #FF6633;
+    border: 2rpx solid #FF6633;
+
+  }
+
+  .more_requirements {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
